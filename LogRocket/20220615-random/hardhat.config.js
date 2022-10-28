@@ -11,33 +11,14 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
-
-
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
-
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
-
 module.exports = {
   solidity: "0.8.4",
-/*
+
   networks: {
-    "local-devnode": {
-       url: "http://localhost:8545",
-       accounts: { mnemonic: "test test test test test test test test test test test junk" }
-    },
-    "optimistic-kovan": {
-       url: "https://kovan.optimism.io",
-       accounts: { mnemonic: process.env.MNEMONIC }
-    },
-    "optimism": {
-       url: "https://mainnet.optimism.io",
-       accounts: { mnemonic: process.env.MNEMONIC }
+    "mumbai": {
+       url: "https://polygon-mumbai.g.alchemy.com/v2/ZodJfVyRlh54vtWlTEGqhxqSKVminrxH",
+       accounts: ["19652ea92a5d0070f48ff4ce083fb5e327f685cf5488f2d26f33d59072da93fb"]
     }
   }
-*/
+
 };
